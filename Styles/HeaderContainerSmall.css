@@ -1,0 +1,63 @@
+@media screen and (max-width: 999px)
+{
+    .header_container_small
+    {
+        position:        fixed;
+
+        z-index:         2;
+
+        top:             0rem;
+        left:            0rem;
+
+        width:           100%;
+        height:          4rem;
+
+        display:         flex;
+        justify-content: center;
+        vertical-align:  center;
+
+        background:    #ff85cc;
+    }
+
+    .header_container_small_dropdown_menu
+    {
+        position:        fixed;
+
+        /* top is controlled in /Scripts/Header.js */
+        top:             -16rem;
+        left:            0rem;
+
+        /* Space for buttons */
+        padding-top:     1rem;
+
+        z-index:         1;
+
+        width:           100%;
+        height:          auto;
+
+        display:         block;
+        justify-content: center;
+
+        background:      #ff85cc;
+
+        transition:      250ms;
+    }
+
+    .header_container_small_dropdown_menu button
+    {
+        position:           relative;
+
+        width:              90%;
+        padding:            1rem;
+        transform:          translateY(-10%);
+
+        /* Struck a balance between an iPhone SE (640 x 1136 pixel) and a "small screen" (768 x 977 px on a 1080p screen in Chrome, with debug tools enabled),
+            sucks to hardcode it like this but I can't be bothered to make it any better tbh, CSS is kind of a pain : ) */
+        transform:          translateX(1.75%);
+    }
+
+    .header_container_large
+    {
+        display: none;
+    }
+}

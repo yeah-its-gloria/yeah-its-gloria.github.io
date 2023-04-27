@@ -1,0 +1,20 @@
+.main_inline_button
+{
+    border:           none;
+    text-decoration:  none;
+
+    background-color: transparent;
+    color:           #ff85cc;
+
+    font-size:        1rem;
+}
+
+.main_inline_button:hover
+{
+    color: #f7bbde;
+}
+
+.main_inline_button:active
+{
+    color: #fa4bb1;
+}

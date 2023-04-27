@@ -1,0 +1,34 @@
+@media screen and (min-width: 1000px)
+{
+    .header_container_small
+    {
+        display: none;
+    }
+
+    .header_container_small_dropdown_menu
+    {
+        display: none;
+    }
+
+    .header_container_small_dropdown_menu button
+    {
+        display: none;
+    }
+
+    .header_container_large
+    {
+        position:        fixed;
+
+        top:             0rem;
+        left:            0rem;
+
+        width:           100%;
+        height:          4rem;
+
+        display:         flex;
+        justify-content: center;
+        vertical-align:  center;
+
+        background:    #ff85cc;
+    }
+}

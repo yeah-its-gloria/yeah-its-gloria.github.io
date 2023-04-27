@@ -1,0 +1,71 @@
+@font-face
+{
+    font-family: "Noto Sans";
+    src: url("/Content/Font.ttf");
+}
+
+/* ------------------------------------------------ */
+
+:root
+{
+    font-family: "Noto Sans";
+}
+
+/* ------------------------------------------------ */
+
+a
+{
+    border:           none;
+    text-decoration:  none;
+
+    background-color: transparent;
+    color:          #ff85cc;
+
+    font-size:        1rem;
+}
+
+a:hover
+{
+    color:          #f7bbde;
+}
+
+a:active
+{
+    color:          #fa4bb1;
+}
+
+a:visited
+{
+    text-decoration: underline;
+    color:         #ff85cc;
+}
+
+/* ------------------------ */
+
+body
+{
+    color:            white;
+    background-color: #1c1c1c;
+}
+
+/* ------------------------ */
+
+button
+{
+    cursor: pointer;
+}
+
+/* ------------------------ */
+
+h1
+{
+    font-size: 3rem;
+}
+
+
+/* ------------------------ */
+
+p
+{
+    font-size: 1rem;
+}

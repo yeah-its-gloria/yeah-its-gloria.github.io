@@ -1,0 +1,57 @@
+@import url("/Styles/HeaderContainerSmall.css");
+@import url("/Styles/HeaderContainerLarge.css");
+
+.header_button
+{
+    padding-inline:   2rem;
+    margin-inline:    1rem;
+
+    max-height:       80%;
+    transform:        translateY(10%);
+
+    border:           none;
+    border-radius:    1rem;
+    background-color: transparent;
+    color:            #000000;
+
+    font-size:        1.6rem;
+    white-space:      nowrap;
+
+    transition:       250ms;
+}
+
+.header_button:hover
+{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius:    2rem;
+}
+
+.header_button:active
+{
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius:    2rem;
+}
+
+/* Fixes the small header menu button's position to be centered on all screens */
+.header_button_menu
+{
+    padding-top: 0.5rem;
+}
+
+.header_content_padding
+{
+    padding-top: 3.5rem;
+}
+
+.header_spacer
+{
+    margin: auto;
+}
+
+.header_title
+{
+    position:  static;
+    left:      -0.5rem;
+    top:       0.5rem;
+    font-size: 2rem;
+}
