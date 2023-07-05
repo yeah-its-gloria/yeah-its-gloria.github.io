@@ -22,36 +22,38 @@
         <link rel="stylesheet" href="/Styles/Common.css">
         <link rel="stylesheet" href="/Styles/Header.css">
 
-        <script src="/Scripts/Header.js"></script>
+        <script type="module" src="/Scripts/Module.js"></script>
+
+        <script type="module" src="/Scripts/Headers.js"></script>
 
         <link rel="stylesheet" href="/Styles/Cell.css">
     </head>
 
     <body>
         <div class="header_container_small">
-            <button class="header_button header_title" onclick="header_button_gloriaaaa();">Gloria's Page</button>
+            <button class="header_button header_title" id="header_button_header">Gloria's Page</button>
 
             <div class="header_spacer"></div>
 
-            <button class="header_button header_button_menu" onclick="header_button_toggle_dropdown_menu(this);"><img src="/Content/MenuIcon.svg"></button>
+            <button class="header_button header_button_menu" id="header_button_toggle_drop_down_menu"><img src="/Content/MenuIcon.svg"></button>
         </div>
 
         <div class="header_container_small_dropdown_menu" id="header_small_dropdown_menu" style="visibility: hidden">
-            <button class="header_button" onclick="header_button_main();">main</button>
-            <button class="header_button" onclick="header_button_projects();">projects</button>
-            <button class="header_button" onclick="header_button_cell();">cell</button>
-            <button class="header_button" onclick="header_button_random();">random stuff</button>
+            <button class="header_button" id="header_button_main">main</button>
+            <button class="header_button" id="header_button_projects">projects</button>
+            <button class="header_button" id="header_button_cell">cell</button>
+            <button class="header_button" id="header_button_random">random stuff</button>
         </div>
 
         <div class="header_container_large">
-            <button class="header_button header_title" onclick="header_button_main();">Gloria's Page</button>
+            <button class="header_button header_title" id="header_button_header_2">Gloria's Page</button>
 
             <div class="header_spacer"></div>
 
-            <button class="header_button" onclick="header_button_main();">main</button>
-            <button class="header_button" onclick="header_button_projects();">projects</button>
-            <button class="header_button" onclick="header_button_cell();">cell</button>
-            <button class="header_button" onclick="header_button_random();">random stuff</button>
+            <button class="header_button" id="header_button_main_2">main</button>
+            <button class="header_button" id="header_button_projects_2">projects</button>
+            <button class="header_button" id="header_button_cell_2">cell</button>
+            <button class="header_button" id="header_button_random_2">random stuff</button>
 
             <div class="header_spacer"></div>
             <div class="header_spacer"></div>
@@ -64,9 +66,9 @@
             <p>I started with <i>no</i> experience at all, and had to restart several times.</p>
             <br>
             <p>The main goal is to make a lightweight and easily usable engine. It is currently written in C++, and I'm considering porting some components to Rust with a thin wrapper.</p>
-            <p>At the minute, it features a completely custom Vulkan renderer, a SSE accelerated mathematics module for linear algebra as well as broken module implementations for WASAPI and OpenXR.</p>
+            <p>At the minute, it features a completely custom Vulkan renderer, an SSE accelerated mathematics module for linear algebra, a pretty crooked JSON and glTF parser, as well as broken module implementations for WASAPI/PulseAudio and OpenXR.</p>
             <br>
-            <p>Here's a screenshot of the engine in action, in its current state, as of 27-04-2023:</p>
+            <p>Here's a screenshot of the engine in action, in its current state, as of 2023-06-25:</p>
             <img src="/Content/Cell.png" class="cell_screenshot" onclick="window.open(this.src);" alt="A still image of the engine in action. Currently it displays a basic octagon, with a lesbian pride flag texture on it." title="Click to open this image in a new tab."/>
         </div>
     </body>

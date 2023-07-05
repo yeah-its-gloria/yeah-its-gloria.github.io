@@ -22,35 +22,39 @@
         <link rel="stylesheet" href="/Styles/Common.css">
         <link rel="stylesheet" href="/Styles/Header.css">
 
+        <script type="module" src="/Scripts/Module.js"></script>
+
+        <script type="module" src="/Scripts/Headers.js"></script>
+
         <link rel="stylesheet" href="/Styles/Main.css">
         <link rel="stylesheet" href="/Styles/Utilities.css">
     </head>
 
     <body>
         <div class="header_container_small">
-            <button class="header_button header_title" onclick="header_button_gloriaaaa();">Gloria's Page</button>
+            <button class="header_button header_title" id="header_button_header">Gloria's Page</button>
 
             <div class="header_spacer"></div>
 
-            <button class="header_button header_button_menu" onclick="header_button_toggle_dropdown_menu(this);"><img src="/Content/MenuIcon.svg"></button>
+            <button class="header_button header_button_menu" id="header_button_toggle_drop_down_menu"><img src="/Content/MenuIcon.svg"></button>
         </div>
 
         <div class="header_container_small_dropdown_menu" id="header_small_dropdown_menu" style="visibility: hidden">
-            <button class="header_button" onclick="header_button_main();">main</button>
-            <button class="header_button" onclick="header_button_projects();">projects</button>
-            <button class="header_button" onclick="header_button_cell();">cell</button>
-            <button class="header_button" onclick="header_button_random();">random stuff</button>
+            <button class="header_button" id="header_button_main">main</button>
+            <button class="header_button" id="header_button_projects">projects</button>
+            <button class="header_button" id="header_button_cell">cell</button>
+            <button class="header_button" id="header_button_random">random stuff</button>
         </div>
 
         <div class="header_container_large">
-            <button class="header_button header_title" onclick="header_button_main();">Gloria's Page</button>
+            <button class="header_button header_title" id="header_button_header_2">Gloria's Page</button>
 
             <div class="header_spacer"></div>
 
-            <button class="header_button" onclick="header_button_main();">main</button>
-            <button class="header_button" onclick="header_button_projects();">projects</button>
-            <button class="header_button" onclick="header_button_cell();">cell</button>
-            <button class="header_button" onclick="header_button_random();">random stuff</button>
+            <button class="header_button" id="header_button_main_2">main</button>
+            <button class="header_button" id="header_button_projects_2">projects</button>
+            <button class="header_button" id="header_button_cell_2">cell</button>
+            <button class="header_button" id="header_button_random_2">random stuff</button>
 
             <div class="header_spacer"></div>
             <div class="header_spacer"></div>
@@ -60,9 +64,9 @@
             <h1>Hello!</h1>
             <p>Welcome to my website. Take a seat, if you want to.</p>
             <br>
-            <p>I'm Gloria, an 18 year old silly lady™ from Germany.</p>
+            <p>I'm Gloria, a 19 year old silly lady™ from Germany. I go by she/they.</p>
             <p>I do hobbyist software development work in my free time. Occasionally I make some stuff in blender.</p>
-            <p>I mostly work on desktop software, using a variation of C++ and Rust. I've also dabbled a bit with Android and the web™, although I don't like either that much.</p>
+            <p>I mostly work on desktop software, using a variation of C++ and Rust. I've also dabbled a bit with Android and the web™.</p>
             <br>
             <p>There's other pages for a more in depth look into what I do - feel free to look around!</p>
             <br>
@@ -70,7 +74,7 @@
             <p><button class="main_inline_button" onclick="header_button_random()">Random stuff</button> brings you to a section featuring random... stuff. Feel free to find out what awaits you.</p>
             <br>
             <p>I'm somewhat active on <a target="_blank" href="https://twitter.com/yeah_its_gloria"><img class="utilities_icon" src="/Content/Twitter.png" alt="Twitter Logo"> Twitter</a> as <b>yeah_its_gloria</b>.</p>
-            <p>I can also be found on <a target="_blank" href="https://discord.com"><img class="utilities_icon" src="/Content/Discord.png" alt="Discord Logo"> Discord</a> as <b>Gloria#8765</b>.</p>
+            <p>I can also be found on <a target="_blank" href="https://discord.com"><img class="utilities_icon" src="/Content/Discord.png" alt="Discord Logo"> Discord</a> as <b>yeah_its_gloria</b>.</p>
         </div>
     </body>
 </html>
